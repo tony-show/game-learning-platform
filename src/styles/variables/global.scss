@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800&display=swap');
+
+:root {
+  --font-family-main: 'Rubik', sans-serif;
+  --line-interval: 8px;
+
+  --font-size-m: 16px;
+  --font-line-m: calc(var(--font-size-m) + var(--line-interval));
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+  --font-size-l: 24px;
+  --font-line-l: calc(var(--font-size-l) + var(--line-interval));
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+}
