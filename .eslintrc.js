@@ -34,6 +34,10 @@ module.exports = {
     'import/extensions': 0,
     'import/no-extraneous-dependencies': 1,
     'no-underscore-dangle': 0,
+    'max-len': ['error', {
+      ignoreComments: true,
+      code: 100,
+    }],
   },
   settings: {
     'import/resolver': {
