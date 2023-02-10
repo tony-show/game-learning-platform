@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'i18next'],
   rules: {
-    semi: 0,
+    semi: ['error', 'never'],
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.tsx'] },
@@ -50,4 +50,4 @@ module.exports = {
   globals: {
     __IS_DEV__: true,
   },
-}
+};
