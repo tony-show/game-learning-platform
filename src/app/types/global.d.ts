@@ -5,6 +5,12 @@ declare module '*.scss' {
   const classNames: IClassNames
   export = classNames
 }
+declare module 'react-dom/client' {
+  import { ReactNode } from 'react'
+
+  const createRoot: (DOM: HTMLElement) => ({render: (Component: ReactNode) => void})
+  export { createRoot }
+}
 
 declare module '*.png'
 declare module '*.jpg'
