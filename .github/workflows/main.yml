@@ -8,7 +8,7 @@ on:
 
 jobs:
   pipline:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [ 17.x ]
