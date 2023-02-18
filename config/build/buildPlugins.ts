@@ -24,8 +24,6 @@ export function buildPlugins({
     }),
   ]
 
-  // temp comment: For pull request check of checks
-
   if (isDev) {
     plugins.push(new webpack.HotModuleReplacementPlugin())
     plugins.push(new ReactRefreshWebpackPlugin())
