@@ -27,8 +27,10 @@ export const Navbar = ({ className }: NavbarProps) => {
         {t('Войти')}
       </Button>
       <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-        {/* eslint-disable-next-line no-trailing-spaces */}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero reprehenderit rerum ex fugiat optio alias vel praesentium quisquam consectetur nemo fuga illum, harum aliquam sequi quis, omnis et illo?
+        {t(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+        libero reprehenderit rerum ex fugiat optio alias vel
+        praesentium quisquam consectetur nemo fuga illum,
+        harum aliquam sequi quis, omnis et illo?`)}
       </Modal>
     </div>
   )
