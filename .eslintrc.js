@@ -2,22 +2,27 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true
+    jest: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:i18next/recommended',
+    'plugin:storybook/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'i18next'],
+  plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
   rules: {
     semi: ['error', 'never'],
     'react/jsx-filename-extension': [2, {
-      extensions: ['.js', '.jsx', '.tsx']
+      extensions: ['.js', '.jsx', '.tsx'],
     }],
     'import/prefer-default-export': 0,
     'no-unused-vars': 1,
@@ -26,7 +31,7 @@ module.exports = {
     'no-shadow': 0,
     '@typescript-eslint/no-shadow': 1,
     'react/function-component-definition': [2, {
-      namedComponents: 'arrow-function'
+      namedComponents: 'arrow-function',
     }],
     'react/jsx-props-no-spreading': 1,
     'import/extensions': 0,
@@ -34,18 +39,30 @@ module.exports = {
     'no-underscore-dangle': 0,
     'max-len': ['error', {
       ignoreComments: true,
-      code: 100
-    }]
+      code: 100,
+    }],
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
   },
   settings: {
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/']
-      }
-    }
+        moduleDirectory: ['node_modules', 'src/'],
+      },
+    },
   },
   globals: {
-    __IS_DEV__: true
-  }
-};
+    __IS_DEV__: true,
+  },
+  overrides: [
+    {
+      files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+      rules: {
+        'max-len': 'off',
+      },
+    },
+  ],
+}

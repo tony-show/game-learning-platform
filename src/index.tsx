@@ -4,6 +4,7 @@ import { ThemeProvider } from 'app/providers/ThemeProvider'
 import 'shared/config/i18n/i18n'
 import { ErrorBoundary } from 'app/providers/ErrorBoundery'
 import { createRoot } from 'react-dom/client'
+import 'app/styles/index.scss'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode)
