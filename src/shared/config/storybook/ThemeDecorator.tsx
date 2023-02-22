@@ -2,6 +2,7 @@ import { Story } from '@storybook/react'
 import { Theme, ThemeProvider } from 'app/providers/ThemeProvider'
 
 export const ThemeDecorator = (theme: Theme) => function (StoryComponent: Story) {
+  document.body.className = theme
   return (
     <ThemeProvider initialTheme={theme}>
       <div className={`app ${theme}`}>

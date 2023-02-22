@@ -8,11 +8,6 @@
   transition: opacity 0.3s;
 }
 
-.Modal.dark {
-  --bg-color: #333;
-  --primary-color: white;
-}
-
 .overlay {
   display: grid;
   align-items: center;

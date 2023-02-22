@@ -1,4 +1,3 @@
-import { useTheme } from 'app/providers/ThemeProvider'
 import React, { ReactNode, useCallback, useEffect } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Portal } from 'shared/ui/Portal/Portal'
@@ -18,7 +17,6 @@ export const Modal = (props: ModalProps) => {
     isOpen,
     onClose,
   } = props
-  const { theme } = useTheme()
 
   const mods: Record<string, boolean> = {
     [cls.opened]: isOpen,
@@ -52,7 +50,7 @@ export const Modal = (props: ModalProps) => {
 
   return (
     <Portal>
-      <div className={classNames(cls.Modal, mods, [className, cls[theme]])}>
+      <div className={classNames(cls.Modal, mods, [className])}>
         <div className={cls.overlay} onClick={closeHandler}>
           <div className={cls.content} onClick={onContentClick}>
             {children}
