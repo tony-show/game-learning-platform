@@ -20,9 +20,9 @@
 .outline {
   padding: 10px 15px;
   margin: 0;
-  color: var(--inverted-primary-color);
+  color: var(--primary-color);
   background: none;
-  border: 1px solid var(--inverted-primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .background {
@@ -66,4 +66,9 @@
 
 .size_xl {
   font: var(--font-xl);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }

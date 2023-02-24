@@ -9,6 +9,8 @@
   "Произошла непредвиденная ошибка": "Have some error",
   "Обновить страницу": "Update page",
   "Войти": "Login",
+  "Выйти": "Logout",
   "Введите username": "Write username",
-  "Введите пароль": "Write password"
+  "Введите пароль": "Write password",
+  "Форма авторизации": "Login form"
 }

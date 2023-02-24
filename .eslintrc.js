@@ -39,7 +39,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'max-len': ['error', {
       ignoreComments: true,
-      code: 100,
+      code: 120,
     }],
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,

@@ -17,9 +17,7 @@ interface SidebarProps {
 export const Sidebar = (props: SidebarProps) => {
   const { className } = props
   const [collapsed, setCollapsed] = useState(false)
-  const { t } = useTranslation()
-  const main = useTranslation('main')
-  const about = useTranslation('about')
+  const { t } = useTranslation(['translation', 'main', 'about'])
 
   const onToggle = () => {
     setCollapsed(!collapsed)
@@ -50,13 +48,13 @@ export const Sidebar = (props: SidebarProps) => {
             className={cls.activeLink}
           >
             <MainIcon className={cls.icon} />
-            <span className={cls.linkText}>{main.t('Главная страница')}</span>
+            <span className={cls.linkText}>{t('Главная страница', { ns: 'main' })}</span>
           </AppLink>
         </div>
         <div className={cls.item}>
           <AppLink to={RoutePath.about} theme={AppLinkTheme.SECONDARY}>
             <AboutIcon className={cls.icon} />
-            <span className={cls.linkText}>{about.t('О сайте')}</span>
+            <span className={cls.linkText}>{t('О сайте', { ns: 'about' })}</span>
           </AppLink>
         </div>
       </div>
