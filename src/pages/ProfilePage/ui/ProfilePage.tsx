@@ -2,16 +2,16 @@ import { memo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { classNames } from 'shared/lib/classNames/classNames'
 
-interface AboutPageProps {
+interface ProfilePageProps {
   className?: string
 }
 
-const AboutPage = memo(({ className }: AboutPageProps) => {
-  const { t } = useTranslation('about')
+const ProfilePage = memo(({ className }: ProfilePageProps) => {
+  const { t } = useTranslation()
   return (
     <div className={classNames('', {}, [className])}>
-      {t('О сайте')}
+      {t('Профиль')}
     </div>
   )
 })
-export default AboutPage
+export default ProfilePage

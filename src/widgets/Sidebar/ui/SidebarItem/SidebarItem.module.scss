@@ -1,0 +1,27 @@
+.SidebarItem {
+  transition: opacity 0.3s;
+
+  a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}
+
+.linkText {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.icon {
+  min-width: 22px;
+  fill: var(--secondary-color);
+}
+
+.collapsed {
+  opacity: 0;
+}
