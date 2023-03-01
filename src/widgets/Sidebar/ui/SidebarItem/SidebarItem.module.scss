@@ -5,6 +5,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    color: var(--inverted-primary-color);
   }
 }
 
@@ -19,7 +20,7 @@
 
 .icon {
   min-width: 22px;
-  fill: var(--secondary-color);
+  fill: var(--inverted-primary-color);
 }
 
 .collapsed {
