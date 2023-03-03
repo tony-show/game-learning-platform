@@ -7,16 +7,16 @@ import { createRoot } from 'react-dom/client'
 import 'app/styles/index.scss'
 import { StoreProvider } from 'app/providers/StoreProvider'
 
-const domNode = document.getElementById('root')
+const domNode = document.getElementById('root')!
 const root = createRoot(domNode)
 root.render(
-  <StoreProvider>
-    <BrowserRouter>
+  <BrowserRouter>
+    <StoreProvider>
       <ErrorBoundary>
         <ThemeProvider>
           <App />
         </ThemeProvider>
       </ErrorBoundary>
-    </BrowserRouter>
-  </StoreProvider>,
+    </StoreProvider>
+  </BrowserRouter>,
 )

@@ -45,10 +45,8 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 0,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
-    'react/jsx-props-no-spreading':[1, {
-      custom: 'ignore',
-    }],
     'no-param-reassign': 0,
+    'no-undef': 0,
   },
   settings: {
     'import/resolver': {
@@ -60,6 +58,7 @@ module.exports = {
   },
   globals: {
     __IS_DEV__: true,
+    __API__: true,
   },
   overrides: [
     {
