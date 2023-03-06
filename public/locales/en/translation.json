@@ -12,5 +12,7 @@
   "Выйти": "Logout",
   "Введите username": "Write username",
   "Введите пароль": "Write password",
-  "Форма авторизации": "Login form"
+  "Форма авторизации": "Login form",
+  "Валюта": "Currency",
+  "Страна": "Country"
 }

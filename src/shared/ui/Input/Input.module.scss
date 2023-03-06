@@ -27,6 +27,11 @@
   animation: blink 0.7s forwards infinite;
 }
 
+.readonly {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;

@@ -1,3 +1,5 @@
 {
-  "Вы неверно ввели логин или пароль": "Login or password is invalid"
+  "Вы неверно ввели логин или пароль": "Login or password is invalid",
+  "Произошла ошибка": "An error occurred",
+  "Попробуйте обновить страницу": "Try reloading the page"
 }
