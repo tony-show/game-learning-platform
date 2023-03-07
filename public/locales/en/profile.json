@@ -8,5 +8,11 @@
   "Возраст": "Age",
   "Город": "City",
   "Никнейм": "Nickname",
-  "Ссылка на аватар": "Link to avatar"
+  "Ссылка на аватар": "Link to avatar",
+  "errors": {
+    "Данные не указаны":"Empty data",
+    "Серверная ошибка при сохранении":"Server error on save",
+    "Имя и фамилия обязательны":"Name and lastname required",
+    "Некорректный возраст":"Incorrect age"
+  }
 }
